@@ -1,0 +1,33 @@
+@import '../../vars.scss';
+
+.root {
+	margin-bottom: 35px;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+
+		input[type='text'] {
+			@include fontStyles;
+			@include inputStyles;
+			background-color: lightgray;
+			padding: 0 10px;
+			margin: 0;
+		}
+
+		.button {
+			@include buttonStyles;
+			padding: 8px 25px 9px;
+
+			&:hover {
+				@include buttonStylesHover;
+			}
+		}
+
+		> div:nth-child(2) {
+			padding: 0 35px;
+			width: 50%
+		}
+	}
+
+}

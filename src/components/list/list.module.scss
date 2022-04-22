@@ -1,0 +1,35 @@
+@import '../../vars.scss';
+
+.root {
+	@include whiteBox;
+	margin-left: 100px;
+
+	.wrapper {
+		padding: 35px;
+
+		.header {
+			display: flex;
+
+			h2 {
+				margin-top: 0;
+				margin-right: 30px;
+			}
+		}
+
+		.list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px
+		}
+	}
+
+	.ico {
+		cursor: pointer;
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+

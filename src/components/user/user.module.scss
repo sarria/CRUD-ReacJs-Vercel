@@ -1,0 +1,48 @@
+@import '../../vars.scss';
+
+.root {
+	@include whiteBox;
+	display: flex;
+	background-color: $COLOR-CONTRAT;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 10px;
+	cursor: pointer;
+	transition: all .3s;
+
+	&:hover {
+		background-color: $COLOR-WHITE;
+	}
+
+	.actions {
+		font-size: 18px;
+		opacity: 0;
+
+		.trash {
+			&:hover {
+				color: $COLOR-RED;
+			}
+		}
+
+		.edit {
+			&:hover {
+				color: $COLOR-BLUE;
+			}
+		}
+	}
+
+	&:hover .actions {
+		opacity: 1;
+	}
+
+	.wrapper {
+		padding-right: 5px;
+
+		.card {
+			> span:nth-child(1) {
+				font-weight: bold;
+				padding-right: 5px;
+			}
+		}
+	}
+}

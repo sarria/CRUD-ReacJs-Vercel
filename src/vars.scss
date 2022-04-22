@@ -1,0 +1,55 @@
+$COLOR-BLUE: #55adea;
+$COLOR-BLUE-DARKER: #2598EA;
+$COLOR-CONTRAT: #eaad82;
+$COLOR-CONTRAT-DARKER: #e48847;
+$COLOR-WHITE: whitesmoke;
+$COLOR-BLACK: #333;
+$COLOR-RED: #bb2626;
+$COLOR-GREY: lightgray;
+
+@mixin fontStyles {
+	font-family: open sans,Sans-serif;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.5em;	
+	color: $COLOR-BLACK;
+}
+
+@mixin inputStyles {
+	width: 100%;
+	padding: 5px 10px 5px 0;
+	margin-bottom: 35px;
+	border: none;
+	border-bottom: solid 2px $COLOR-BLUE;
+	opacity: .7;
+
+	&:focus {
+		outline: none;
+		opacity: .9;
+	}
+}
+
+@mixin buttonStyles {
+	font-family: open sans,Sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: $COLOR-BLUE;
+	border-radius: 30px 30px 30px 30px;
+	padding: 16px 50px 18px;
+	border: none;
+	width: fit-content;
+	cursor: pointer;
+	color: $COLOR-WHITE;
+	transition: all .3s;
+}
+
+@mixin buttonStylesHover {
+	background-color: $COLOR-BLUE-DARKER;
+}
+
+@mixin whiteBox {
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}

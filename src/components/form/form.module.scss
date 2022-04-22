@@ -1,0 +1,61 @@
+@import '../../vars.scss';
+
+.root {
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	.wrapper {
+		padding: 35px;
+		
+		form {
+			display: grid;
+			// grid-template-columns: 
+
+			input {
+				@include fontStyles;
+				@include inputStyles;
+			}
+
+			.zipCode {
+				width: 50%;
+			}
+
+			.fieldError {
+				border-bottom-color: $COLOR-RED;
+			}
+
+			.buttons {
+				display: flex;
+				align-items: center;
+			}
+
+			.button {
+				@include buttonStyles;
+				margin: 35px 0;
+
+				&:hover {
+					@include buttonStylesHover;
+				}
+			}
+
+			.disabled {
+				background-color: $COLOR-GREY;
+			}
+
+			.cancel {
+				color: $COLOR-RED;
+				margin-left:35px;
+				cursor: pointer;
+				opacity: 0.7;
+				font-size: 35px;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+

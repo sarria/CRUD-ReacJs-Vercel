@@ -1,0 +1,28 @@
+@import './vars.scss';
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $COLOR-WHITE;
+	@include fontStyles;
+}
+  
+.App {
+	padding: 50px;
+}
+  
+h1, h2, h3 {
+	color: $COLOR-BLUE;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+
+	> div:nth-child(1) {
+		width: 30%
+	}
+	> div:nth-child(2) {
+		width: 60%
+	}
+}
