@@ -1,5 +1,8 @@
 ## Code interview for RentRedi
 
+Live demo \
+https://crud-reacjs-ui.vercel.app/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
