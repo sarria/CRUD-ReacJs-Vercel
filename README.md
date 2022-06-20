@@ -1,5 +1,3 @@
-## Code interview for RentRedi
-
 Live demo \
 https://crud-reacjs-ui.vercel.app/ 
 

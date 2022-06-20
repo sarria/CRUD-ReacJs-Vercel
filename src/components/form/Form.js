@@ -80,8 +80,8 @@ const Form = () => {
 	return (
 		<div className={styles.root}>
 			<div className={styles.wrapper}>
-				<h1>RentRedi</h1>
-				<h2>Users UI Interview Code</h2>
+				{/* <h1>RentRedi</h1>
+				<h2>Users UI Interview Code</h2> */}
 				<form onSubmit={handleSubmit}>
 					<div className={styles.box}>
 						<label>Enter Name:</label>
